@@ -1,0 +1,8 @@
+<div *ngIf="meme" class="card">
+    <div class="card-title">{{ meme.name }}</div>
+    <img src="{{ meme.url }}" alt="" class="card-img">
+    <div class="card-controls">
+        <app-button text="Download" (click)="downloadMeme(meme.url)"></app-button>
+        <app-button text="Delete" (click)="deleteMeme(meme)"></app-button>
+    </div>
+</div>
